@@ -20,7 +20,7 @@ public class ModuleGrader_Y3871879 {
 	
 	 if (mark < 40)
 	 {
-		 return  "Fail";
+		 return  "Outright Fail";
 	 }
 	 
 	 else if (mark > 39 && mark < 50 )
@@ -44,7 +44,8 @@ else if (mark > 69 && mark < 101)
 		 
 	 {
 		 return "Excellent";
-	 } 
+	 }
+	return null; 
 		 
 }
 // Method to get valid mark
@@ -73,6 +74,7 @@ else if (mark > 69 && mark < 101)
 		do
 		{
 		System.out.println("***********Module Grading Programme***********");
+		System.out.println();
 		getValidModulemark();
 		System.out.println();
 		System.out.println("Your Grade is " + markModule());
@@ -83,5 +85,7 @@ else if (mark > 69 && mark < 101)
 		
 	}
 		while (response == 'y' || response == 'Y');
+		System.out.println();
+		System.out.println("Thank You grading is complete");
 	}
 }
