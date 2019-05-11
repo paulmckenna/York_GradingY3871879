@@ -2,7 +2,7 @@ import java.util.*;
 /**
  * Algorithims and Data Structures: Practical Programming Assignment 1
  * 
- * Module markr
+ * Module Grader
  * 
  * @author (Paul McKenna) 
  * @version (050519)
@@ -51,7 +51,7 @@ else if (mark > 69 && mark < 101)
 // Method to get valid mark
 	public void getValidModulemark()
 	{
-		//Prompt the user for a string 
+		//Prompt the user for a mark 
      	Scanner sc=new Scanner(System.in);
      	System.out.println("Please enter your mark");
      	mark =sc.nextInt();	
