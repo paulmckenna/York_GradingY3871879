@@ -59,19 +59,19 @@ public class DegreeGrader_Y3871879 {
 			
 				//Prompt the user for a module average 
 		     	Scanner sc=new Scanner(System.in);
-		     	System.out.println("Please enter your average for all modules");
+		     	System.out.println("Please enter your average for all modules.");
 		     	System.out.println();
 		     	allModuleAverage =sc.nextInt();	
 		     	while (allModuleAverage <0 || allModuleAverage>100)
 		     	{
 		     		System.out.println();
-		     		System.out.println("Invalid module. Please reenter your average mark");
+		     		System.out.println("Invalid module mark. Please reenter your average mark.");
 		     		allModuleAverage =sc.nextInt();
 			}
 		     	if (allModuleAverage>=0 && allModuleAverage<=100)
 		     	{
 		     		System.out.println();
-		     		System.out.println("Thank you. Your average mark is valid");
+		     		System.out.println("Thank you. Your average mark is valid.");
 		     		System.out.println();
 		     	}
 		
@@ -83,16 +83,19 @@ public class DegreeGrader_Y3871879 {
 		{
 		//Prompt the user for ISM module average 
 	 	Scanner sc=new Scanner(System.in);
-	 	System.out.println("Please enter your average for ISM modules");
+	 	System.out.println("Please enter your average for ISM modules.");
+	 	System.out.println();
 	 	ismModuleAverage =sc.nextInt();	
 	 	while (ismModuleAverage <0 || ismModuleAverage>100)
 	 			{
-	 				System.out.println("Invalid module. Please reenter your average mark");
+			 		System.out.println();		
+			 		System.out.println("Invalid module. Please reenter your average mark.");
 	 				ismModuleAverage =sc.nextInt();
 	 			}
 	 	if (ismModuleAverage>=0 && ismModuleAverage<=100)
 		 		{
-		 			System.out.println("Thank you. Your average ISM mark is valid");
+		 			System.out.println();
+	 				System.out.println("Thank you. Your average ISM mark is valid.");
 		 		}	
 		}
 
@@ -111,7 +114,7 @@ public class DegreeGrader_Y3871879 {
 				 	}
 			 	if (compFails>=0 && compFails<=180)
 				 	{
-				 		System.out.println("Thank you. This is a valid number of credits");
+				 		System.out.println("Thank you. This is a valid number of credits.");
 				 	}	
 		}
 
@@ -129,7 +132,7 @@ public class DegreeGrader_Y3871879 {
 				 	}
 		 	if (outrightFails>=0 && outrightFails<=11)
 				 	{
-				 		System.out.println("Thank you. This is a valid number of modules");
+				 		System.out.println("Thank you. This is a valid number of modules.");
 				 	}	
 		}
 	
@@ -154,7 +157,7 @@ public class DegreeGrader_Y3871879 {
 					}
 			while (response == 'y' || response == 'Y');
 						System.out.println();
-						System.out.println("Thank You classification is complete");
+						System.out.println("Thank You classification is complete.");
 		}
 	}
 
