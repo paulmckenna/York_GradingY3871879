@@ -30,20 +30,29 @@ public class DegreeGrader_Y3871879 {
 			{
 				return "Distinction";
 			}
+			//Following test run 1 amended line below to <=20 not <20
 			
-			else if((allModuleAverage >=60) && (ismModuleAverage >=60) && (compFails <20) && (outrightFails == 0)) 
+			else if((allModuleAverage >=60) && (ismModuleAverage >=60) && (compFails <=20) && (outrightFails == 0)) 
 			{
 				return "merit";
 			}
 			
-			else if((allModuleAverage >=50) && (ismModuleAverage >=50) && (compFails <40) && (outrightFails == 0)) 
+			//Following test run 1 amended line below to <=40 not <40
+			else if((allModuleAverage >=50) && (ismModuleAverage >=50) && (compFails <=40) && (outrightFails == 0)) 
 			
 			{
 				return "Pass";
 				
 			}
 			
-			else if(outrightFails > 0) 
+			else if((allModuleAverage < 50) || (ismModuleAverage < 50)) 
+				
+			{
+				return "Fail";
+				
+			}
+			
+			else if( outrightFails > 0) 
 			{
 			return "Fail";
 			
