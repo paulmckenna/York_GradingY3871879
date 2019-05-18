@@ -53,16 +53,16 @@ else if (mark > 69 && mark < 101)
 	{
 		//Prompt the user for a mark 
      	Scanner sc=new Scanner(System.in);
-     	System.out.println("Please enter your mark");
+     	System.out.println("Please enter your mark.");
      	mark =sc.nextInt();	
      	while (mark <0 || mark>100)
      	{
-     		System.out.println("Invalid mark. Please reenter your mark");
+     		System.out.println("Invalid mark. Please reenter your mark.");
          	mark =sc.nextInt();
 	}
      	if (mark>=0 && mark<=100)
      	{
-     		System.out.println("Thank you. Your mark is valid");
+     		System.out.println("Thank you. Your mark is valid.");
      	}
 }
 	
@@ -86,6 +86,6 @@ else if (mark > 69 && mark < 101)
 	}
 		while (response == 'y' || response == 'Y');
 		System.out.println();
-		System.out.println("Thank You grading is complete");
+		System.out.println("Thank You grading is complete.");
 	}
 }
